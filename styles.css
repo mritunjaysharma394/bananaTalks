@@ -1,38 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Public+Sans:wght@400;700&display=swap');
+
 :root {
-    --primary-color: #9D174D;
+    --primary-color: #ffe135;
+    --secondary-color: #5B21B6;
+}
+
+body {
+    font-family: 'Fugaz One', cursive;
+
 }
 
 /** container **/
 
 .container {
     padding: 0rem 1rem;
+    background-image: url("images/minion-back.jpg");
+    background-repeat: no-repeat;
 }
 
 .container-center {
     max-width: 600px;
-    margin: auto;
+    margin: auto
 }
 
 /**navigation **/
 .navigation {
     background-color: var(--primary-color);
     padding: 1rem;
-    color: white;
+    color: var(--secondary-color)
 }
 
 .nav-band {
-    font-size: larger;
+    font-size: x-large;
     font-weight: bolder;
     text-align: center;
+    font-family: 'Fugaz One', cursive;
 }
 
 /** textarea **/
-label,textarea {
+
+label,
+textarea {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: .8rem;
     letter-spacing: 1px;
+    font-family: 'Fugaz One', cursive;
+    width: 100%;
+}
+
+label {
+    font-size: medium;
 }
 
 textarea {
@@ -40,7 +60,30 @@ textarea {
     border-radius: 5px;
     line-height: 1.5;
     padding: 10px;
+    font-size: medium;
     box-shadow: 1px 1px 1px #999;
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+/** output **/
+#outputTxt {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: 10px;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 1px 1px 1px #999;
+    font-size: medium;
+    font-family: 'Fugaz One', cursive;
 }
 
 /** button **/
@@ -49,11 +92,37 @@ button {
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     border-radius: 5px;
-
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     /* width: 8rem; */
     cursor: pointer;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
 
 }
+
+.footer {
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    color: var(--secondary-color);
+
+}
+
+.footer-header {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
