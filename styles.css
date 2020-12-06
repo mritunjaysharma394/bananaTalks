@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #9D174D;
+}
+
+/** container **/
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/**navigation **/
+.navigation {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: white;
+}
+
+.nav-band {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/** textarea **/
+label,textarea {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #999;
+}
+
+/** button **/
+button {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+
+    /* width: 8rem; */
+    cursor: pointer;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    textarea {
+        max-width: 100%;
+    }
+
+
+}
